@@ -25,10 +25,9 @@
 /*** header ***/
 
 header {
-    background: linear-gradient(#f1bbde, rgba(255, 242, 242, 0.4)), url("../Images/Cupcakes-background5.jpg");
+    background: linear-gradient(#f1bbde, rgba(255, 242, 242, 0.4)), url("../images/Cupcakes-background5.jpg");
     background-size: cover;
     height: 100vh;
-    /*margin-bottom: 20px;*/
     background-attachment: fixed;
 }
 
@@ -165,7 +164,6 @@ nav ul li a:active {
 /*** Our cupcakes ***/
 .heading-main h2 {
     text-align: center;
-    /*margin-top: 10px;*/
     font-size: 40px;
     color: #ed4a99;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -183,21 +181,12 @@ nav ul li a:active {
     width: 100%;
     border-radius: 5px;
     max-width: 100%;
-    /*margin: 15px;*/
-    /*padding: 0 10px;*/
     transition: transform 1s;
     position: relative;
     box-shadow: 5px 5px 10px rgb(46, 13, 35);
 }
 
-/*.cupcake-photo img:hover {
-    transform: scale(1.03);
-}*/
-
 /*** About us ***/
-/*.about-us h2 {
-    margin-bottom: 25px;;
-}*/
 
 .about-us h2:after {
     width: 180px;
@@ -245,10 +234,6 @@ nav ul li a:active {
     background-attachment: fixed;
 }
 
-/*.reviews h2 {
-    padding-top: 20px; 
-}*/
-
 .reviews h2:after {
     width: 350px;
 }
@@ -281,10 +266,6 @@ nav ul li a:active {
 
 /*** Photo gallery ***/
 
-/*.photo-gallery .heading-main h2 {
-        margin-top: 25px;
-}*/
-
 .photo-segment li {
     list-style-type: none;
     overflow: hidden;
@@ -292,15 +273,7 @@ nav ul li a:active {
 
 .photo-segment img {
     width: 100%;
-    /*opacity: 0.7;
-    transform: scale(1);*/
-}
-
-/*.photo-segment img:hover {
-    transition: transform 0.5s, opacity 0.5s;
-    transform: scale(1.15);
-    opacity: 1;
-}  */  
+} 
 
 /*** Contact form ***/
 
