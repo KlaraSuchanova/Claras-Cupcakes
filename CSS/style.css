@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** reusable ***/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.empty-space {
+    height: 50px;
+}
+
+/*colors: 
+    blue #89d4e7, 
+    dark blue #77b6c7,
+    dark pink #cf3f87, 
+    pink #ed4a99 
+    (rgba(0,0,0,0.7),rgba(0,0,0,0.7))
+    (#f1bbde, rgba(255, 242, 242, 0.4))*/
+
+/*** header ***/
+
+header {
+    background: linear-gradient(#f1bbde, rgba(255, 242, 242, 0.4)), url("../Images/Cupcakes-background5.jpg");
+    background-size: cover;
+    height: 100vh;
+    /*margin-bottom: 20px;*/
+    background-attachment: fixed;
+}
+
+.nav-background {
+    width: 100%;
+    height: 40px;
+    background: rgba(211, 242, 242, 0.9);
+    position: fixed;
+    z-index: 50;
+}
+
+#logo img {
+    width: 100px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+nav ul {
+    float: right;
+    margin-top: 5px;
+    position: fixed;
+    margin-left: 25%;
+    z-index: 100;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    color: #68c5df;
+    text-decoration: none;
+    border-bottom: 2px solid transparent; 
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+    border-bottom: 2px solid #ed4a99; 
+    transition: border-bottom 0.5s;
+}
+
+.header-text {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.header-text h1 {
+    color: #ed4a99;
+    font-size: 100px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-family: Didot, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.header-text h1 span {
+    color: #5fc5de;
+}
+
+.header-text h2 {
+    color: #68c5df;
+    font-size: 30px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    margin-top: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
+}
+
+.btn {
+    color: #ed4a99;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border:2px solid #89d4e7;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 30px 10px;
+    border-radius: 20px;
+    z-index: 0;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+}
+      
+.btn:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #ed4a99;
+    z-index: -1;
+    transform:translateX(-105%);
+    transition: all 1s;
+}
+      
+.btn:hover:before {
+    transform:translateX(0);
+}
+      
+.btn:hover,
+.btn:active {
+    color:#89d4e7;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background: #89d4e7;
+    margin-left: 0;
+}
+
+.btn-empty:link,
+.btn-empty:visited {
+    background: #89d4e740;
+    border: 2px solid #89d4e740;
+}
+
+/*** Mobile navigation ***/
+.mobile-nav-icon {
+    display: none;
+    float: right;
+    margin: 7px 10px 0 0;
+}
+
+/*** Our cupcakes ***/
+.heading-main h2 {
+    text-align: center;
+    /*margin-top: 10px;*/
+    font-size: 40px;
+    color: #ed4a99;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading-main h2:after {
+    content: "";
+    display: block;
+    width: 250px;
+    border-bottom: 4px solid #89d4e7;
+    margin: 10px auto;
+}
+
+.cupcake-photo img {
+    width: 100%;
+    border-radius: 5px;
+    max-width: 100%;
+    /*margin: 15px;*/
+    /*padding: 0 10px;*/
+    transition: transform 1s;
+    position: relative;
+    box-shadow: 5px 5px 10px rgb(46, 13, 35);
+}
+
+/*.cupcake-photo img:hover {
+    transform: scale(1.03);
+}*/
+
+/*** About us ***/
+/*.about-us h2 {
+    margin-bottom: 25px;;
+}*/
+
+.about-us h2:after {
+    width: 180px;
+}
+
+.cupcake-info img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin: 0 5px 5px 5px;
+    box-shadow: 5px 5px 10px rgb(46, 13, 35);
+}
+
+.text-cupcake {
+    margin-bottom: 20px
+}
+
+.text-cupcake div {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #89d4e7;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    color:#ed4a99;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 12px;
+    float: left;
+}
+
+.text-cupcake p {
+    margin-left: 60px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: Didot, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*** References ***/
+
+.reviews {
+    margin: 10px 0 0 0;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/Cupcakes-background5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*.reviews h2 {
+    padding-top: 20px; 
+}*/
+
+.reviews h2:after {
+    width: 350px;
+}
+
+.one-review {
+    color: #fff;
+    font-size: 20px;
+}
+
+.one-review p {
+    font-style: italic;
+    font-family: Didot, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.photo-name {
+    margin: 10px 0 30px 0; 
+}
+
+.photo-name p {
+   padding: 12px;  
+   margin-left: 50px; 
+   font-style: normal;
+}
+
+.photo-name img{
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+}
+
+/*** Photo gallery ***/
+
+/*.photo-gallery .heading-main h2 {
+        margin-top: 25px;
+}*/
+
+.photo-segment li {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.photo-segment img {
+    width: 100%;
+    /*opacity: 0.7;
+    transform: scale(1);*/
+}
+
+/*.photo-segment img:hover {
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scale(1.15);
+    opacity: 1;
+}  */  
+
+/*** Contact form ***/
+
+.contact-form {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact-form input {
+    font-size: 20px;
+    width: 80%;
+    margin: 5px 0;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(155, 117, 138);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
+}
+
+.contact-form textarea {
+    font-size: 20px;
+    width: 80%;
+    margin: 5px 0;
+    padding: 7px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(155, 117, 138);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
+}
+
+input[type="submit"] {
+    background: #89d4e7;
+    font-size: 30px;
+    color: #ed4a99;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background: #ed4a99;
+    color: #5fc5de;
+    transition: background-color .5s;
+}
+
+/*** Footer ***/
+
+.footer-page {
+    background: #ecc6e1;
+    margin-top: 20px;
+    color: #66585f;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px; 
+}
+
+.social {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social p {
+    display: inline;
+    margin: 0 20px;
+}
+
+.social p a:link,
+.social p a:visited {
+    text-decoration: none;
+    color: #ed4a99;
+    font-weight: bold;
+}
+
+.social p a:hover,
+.social p a:active {
+    color: #5fc5de;
+    text-decoration: underline 2px solid #5fc5de;
+}
+
+.footer-text {
+    text-align: center;
+    margin: 10px 0; 
+    font-size: 15px;
+}
+
+/*** Stop floating ***/
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+    

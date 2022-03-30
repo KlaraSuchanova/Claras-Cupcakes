@@ -1,0 +1,200 @@
+@media only screen and (max-width: 1200px){ 
+    
+    /*** Our cupcakes ***/
+     .cupcake-photo .col {
+        width: 48%;
+    }
+
+    .cupcake-photo .col img {
+        margin: 0 10px;
+    }
+
+    /*** About us ***/
+    .cupcake-info .span-1-of-2 {
+        width: 99%;
+    }
+
+    .cupcake-info {
+        margin: 0 10px;
+    }
+
+    .text-cupcake p {
+        line-height: 1.5;
+    }
+
+    /*** References ***/
+    .col.span-1-of-3.one-review {
+        width: 45%;
+        margin: 0 15px;
+    }
+
+    .one-review:nth-child(3) {
+        display: none;
+    }
+
+    /*** Photo gallery ***/
+    .photo-segment {
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 1140px){
+
+    /*** Header text ***/
+    .header-text h1 {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 960px){
+
+    /*** Header text ***/
+    .header-text {
+       width: 100%;
+       left: 0;
+       text-align: center;
+    }
+    
+    .header-text h1 {
+        padding-bottom: 20px;
+        font-size: 80px;
+    }
+
+    .header-text h2 {
+        font-size: 25px;
+    }
+
+    /*** Header buttons ***/
+    .btn {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .btn-full:link,
+    .btn-full:visited {
+        margin: 30px 30%;
+        padding: 15px;
+    }
+
+    .btn-empty:link,
+    .btn-empty:visited {
+        margin: 30px 30%;
+        padding: 10px;
+    }
+
+    /*** Mobile navigation ***/
+
+    nav ul li {
+        display: block;
+    }
+
+    .nav-background {
+       height: 50px;
+    }
+
+    .mobile-nav-back {
+        height: 145px;
+        position: fixed;
+        width: 100%;
+        background-color: rgba(211, 242, 242, 0.9);
+        display: none;
+        z-index: 100;
+    }
+
+    .mobile-nav-icon {
+        display: inline-block;
+        z-index: 200;
+        position: fixed;
+        right: 2%;
+    } 
+    nav ul {
+        display: none;
+        z-index: 200;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:active {
+        border-bottom: 2px solid transparent; 
+    }
+
+    /*** Logo ***/
+    #logo img {
+        width: 100px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+}
+}
+
+@media only screen and (max-width: 750px){ 
+
+    /*** Header text ***/
+    .header-text h1 {
+        font-size: 70px;
+    }
+
+    /*** Our cupcakes ***/
+    .cupcake-photo .col {
+        width: 96%;
+        margin: 1% 0 1% 0;
+    }
+
+    .cupcake-photo img {
+        margin: 0 10px;
+    }
+    
+    /*** References ***/
+    .col.span-1-of-3.one-review {
+        width: 95%;
+        margin: 0 15px;
+    }
+
+    .one-review:nth-child(3) {
+        display: block;
+    }
+
+    /*** Photo gallery ***/
+    .photo-name {
+        float: right;
+        margin-right: 20px;
+    }
+
+    .photo-segment li {
+        width: 100%;
+    }
+
+    .photo-segment .col {
+        margin: 1% 0 1% 0;
+    }
+}
+
+@media only screen and (max-width: 664px){
+
+    /*** Header text ***/
+    
+    .header-text h1 {
+        padding-bottom: 20px;
+        font-size: 80px;
+    }
+
+    /*** Header buttons ***/
+    .btn {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .btn-full:link,
+    .btn-full:visited {
+        margin: 30px 120px;
+        padding: 20px;
+    }
+
+    .btn-empty:link,
+    .btn-empty:visited {
+        margin: 30px 120px;
+        padding: 20px;
+    }
+}
