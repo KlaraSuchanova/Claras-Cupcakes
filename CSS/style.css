@@ -25,7 +25,7 @@
 /*** header ***/
 
 header {
-    background: linear-gradient(#f1bbde, rgba(255, 242, 242, 0.4)), url("../images/Cupcakes-background5.jpg");
+    background: linear-gradient(#f1bbde, rgba(255, 242, 242, 0.4)), url("../Images/Cupcakes-background5.jpg");
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
